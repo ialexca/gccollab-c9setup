@@ -25,7 +25,7 @@ mysql-ctl start
 # BD Name: gccollabdb
 # username: gccollab
 # password: secret
-mysql -u root -e `(dirname $0)`/gccollab-setup.sql
+mysql -u root < "`(dirname $0)`/gccollab-setup.sql"
 
 #Rewrite apache conf with gccollab config
 sudo a2enmod rewrite
