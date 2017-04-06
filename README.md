@@ -14,7 +14,11 @@
   - Database name: gccollabdb
   - Database user: gccollab
   - Database password: secret
-    
+  
+  Mailcatcher
+  - smtp://localhost:1025
+  - http://localhost:1080
+  
 5. Goto Page https://your-project-name-c9username.c9users.io/gccollab
   - Note that you must replace `your-project-name` and `c9username`.
 
@@ -24,3 +28,5 @@
   ```bash
      # ./setup/after.sh
    ```
+   
+   
