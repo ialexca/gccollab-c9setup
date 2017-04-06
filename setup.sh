@@ -33,3 +33,12 @@ sudo sed -i.bak 's|<\/VirtualHost>|  <Directory \/var\/www\/html\/gccollab>\n   
 
 #Restart apache service
 sudo service apache2 restart
+
+#Install Mailcatcher
+sudo apt-get update
+sudo apt-get install -y build-essential software-properties-common
+sudo apt-get install -y libsqlite3-dev ruby1.9.1-dev
+sudo gem install mailcatcher
+
+#Start mailcatcher
+mailcatcher
